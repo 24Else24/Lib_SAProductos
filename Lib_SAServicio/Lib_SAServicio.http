@@ -1,0 +1,6 @@
+@Lib_SAServicio_HostAddress = http://localhost:5003
+
+GET {{Lib_SAServicio_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

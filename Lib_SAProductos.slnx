@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Front/">
+    <Project Path="Lib_SAFront/Lib_SAFront.csproj" />
+    <Project Path="Lib_SAPresentacion/Lib_SAPresentacion.csproj" />
+  </Folder>
+  <Folder Name="/Servicios/">
+    <Project Path="Lib_SAaplicacion/Lib_SAaplicacion.csproj" />
+    <Project Path="Lib_SAServicio/Lib_SAServicio.csproj" />
+  </Folder>
+</Solution>

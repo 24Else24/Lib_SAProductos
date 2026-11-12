@@ -1,0 +1,28 @@
+CREATE DATABASE ProductosSA;
+GO 
+USE ProductosSA;
+GO 
+
+
+
+CREATE TABLE [Tipos] (
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+    [Nombre] NVARCHAR(50) NOT NULL,
+
+);
+
+CREATE TABLE [Productos] (
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+    [Codigo] NVARCHAR(20) NOT NULL,
+    [Nombre] NVARCHAR(50) NOT NULL,
+    [Precio] DECIMAL NOT NULL,
+    [Cantidad] INT NOT NULL,
+    [id_tipo] INT REFERENCES [Tipos]([Id]) NOT NULL
+);
+
+CREATE TABLE [Auditoria] (
+    [Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+    [Fecha] SMALLDATETIME NOT NULL,
+    [Desc] NVARCHAR(50) NOT NULL,
+
+);
